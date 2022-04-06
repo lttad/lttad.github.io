@@ -7,7 +7,13 @@
 .dark button {
 
   color: #fff;
+  
+  
 }
+.dark p{
+  color:white
+}
+
 
 
 /*--------------------------------------------------------------
@@ -30,7 +36,7 @@
   height: 100px;
   width: 100px;
   border-right: 5px solid transparent;
-  border-top: 5px solid #92dc56;
+  border-top: 5px solid #77A13B;
   border-radius: 50%;
   animation: spin 1s ease-in-out;
   animation-iteration-count: 3;
@@ -55,12 +61,12 @@ body {
 }
 
 a {
-  color: #1CCC0E;
+  color: #77A13B;
 }
 
 a:hover {
  
-  color: #1CCC0E;
+  color: #77A13B;
   text-decoration: none;
 }
 
@@ -83,7 +89,7 @@ border-left:20px
   margin-top: var(--hauteur-menu);
   width: 100%;
   text-align: left;
-  background-color: #1CCC0E;
+  background-color: #77A13B;
   border-radius: 2px;
   overflow: hidden;
   max-height: 0;
@@ -104,7 +110,7 @@ nav > ul > li:hover > a{
 }
 
 .sous-menu > li:hover > a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 @keyframes rotationFleche {
   0% {
@@ -153,13 +159,13 @@ nav > ul > li:hover > a{
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #1CCC0E;
+  background: #77A13B;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #1CCC0E;
+  background: #77A13B;
   color: #fff;
 }
 
@@ -170,7 +176,7 @@ nav > ul > li:hover > a{
   z-index: 997;
   transition: all 0.5s;
   height: 80px;
-  background: rgba(28, 204, 14, 0.8);
+  background: #77A13B;
 }
 
 #header.header-transparent {
@@ -179,7 +185,10 @@ nav > ul > li:hover > a{
 
 #header.header-scrolled {
   height: 60px;
-  background: rgba(28, 204, 14, 0.8);
+  background: #77A13B;
+}
+@media (max-width: 600px) {
+  
 }
 
 /*--------------------------------------------------------------
@@ -254,7 +263,7 @@ nav > ul > li:hover > a{
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #1CCC0E;
+  color: #77A13B;
 }
 
 .nav-menu .drop-down > a:after {
@@ -285,7 +294,6 @@ nav > ul > li:hover > a{
   right: 15px;
 }
 
-@media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
   }
@@ -295,7 +303,7 @@ nav > ul > li:hover > a{
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
   }
-}
+
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -349,7 +357,7 @@ nav > ul > li:hover > a{
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #1CCC0E;
+  color: #77A13B;
   text-decoration: none;
 }
 
@@ -408,11 +416,12 @@ nav > ul > li:hover > a{
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  width:auto;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right;
+  background: url("../img/hero-bg.jpg") ;
   background-size: cover;
   position: relative;
+  
 }
 
 #hero:before {
@@ -443,6 +452,7 @@ nav > ul > li:hover > a{
   font-size: 64px;
   font-family: "Open Sans", serif;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 #hero h2 {
@@ -1041,7 +1051,7 @@ section {
   z-index: 3;
   right: 15px;
   transition: all ease-in-out 0.3s;
-  background: rgba(28, 204, 14, 0.5);
+  background: #77A13B;
   padding: 10px 15px;
 }
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -1143,10 +1153,10 @@ section {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #1CCC0E;
+  color: #77A13B;
   border-radius: 50%;
-  padding: 15px;
-  background: #fff6e4;
+ 
+ 
 }
 
 .contact .info-box h3 {
@@ -1163,6 +1173,10 @@ section {
   margin-bottom: 0;
 }
 
+
+
+
+
 .contact .social-links {
   margin-top: 15px;
   display: flex;
@@ -1172,19 +1186,22 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #687683;
+  background: rgba(214, 215, 216, 0.6);
+  color: #fff;
   line-height: 1;
-  margin: 0 8px;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
   transition: 0.3s;
-  padding: 14px;
-  border-radius: 50px;
-  border: 1px solid #dde1e4;
 }
 
 .contact .social-links a:hover {
+  background: #ffb727;
   color: #fff;
-  border-color: #1CCC0E;
-  background: #1CCC0E;
+  text-decoration: none;
 }
 
 .contact .php-email-form {
@@ -1216,7 +1233,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #77A13B;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1236,7 +1253,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #77A13B;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1303,7 +1320,7 @@ form { max-width:420px; }
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #1CCC0E;
+  border:2px solid #77A13B;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -1326,7 +1343,7 @@ textarea {
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#1CCC0E;
+  background:#77A13B;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -1391,7 +1408,7 @@ textarea {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1CCC0ECC;
+  background: #77A13B;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1409,7 +1426,7 @@ textarea {
   text-decoration: none;
 }
 
-#footer .copyright {  niussn grid-auto-rows: 32px;
+#footer .copyright {  grid-auto-rows: 32px;
   margin: 0 0 5px 0;
 }
 
